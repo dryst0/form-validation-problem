@@ -15,8 +15,8 @@ class TestForm(forms.Form):
         animal = cleaned_data.get('animal')
         type_of_tiger = cleaned_data.get("type_of_tiger")
 
-        if len(animal) < 2:
+        if animal is None or len(animal) < 2:
             self.add_error('animal', "Must select at least 2 animals.")
 
-        if 'tiger' in animal and type_of_tiger == '':
+        if animal is not None and 'tiger' in animal and type_of_tiger == '':
             self.add_error('type_of_tiger', "Animal Tiger is selected; type of tiger must not be empty.")
