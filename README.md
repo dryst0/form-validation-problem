@@ -27,4 +27,4 @@ If the form is submitted and an error occurs, the error element's parent should 
 
 ## Submission
 
-Please email us a link to your fork of this repository, or a zip or tar.gz of your solution to 1337h4x0r@springload.co.nz.
+A possible solution using Django Framework. All forms of validation are handled by Django's Form API.
